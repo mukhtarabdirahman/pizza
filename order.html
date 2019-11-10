@@ -72,6 +72,64 @@
                         </div>
                     </form>
                 </div>
+                <div id="spw" class="container-fluid text-white">
+                        <h1 class="hc-heading">Delivery</h1>
+                            <div id="spw-input" class="mb-3">
+                                <form action="">
+                                    <input type="checkbox" name="delivery" id="delivery-option"><span class="toppings ml-2">I want it Delivered</span>
+                                </form>
+                            </div>
+                    </div>
+                    <div id="spw" class="container-fluid text-white">
+                            <div id="spw-input">
+                                <button id="place-order" onclick="placeOrder()">CHECKOUT</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cart">
+                <h1 class="text-white hc-heading">Ordered Pizza</h1>
+                <div class="pp-background">
+                    <div id="spw" class="container-fluid text-white">
+                        <h1 class="hc-heading">Pizza Size</h1>
+                            <div id="spw-input">
+                                <p id="choosen-size"></p>
+                            </div>
+                    </div>
+                    <div id="spw" class="container-fluid text-white mt-5">
+                        <h1 class="hc-heading">Pizza Crust</h1>
+                            <div id="spw-input">
+                                <p id="choosen-crust"></p>
+                            </div>
+                    </div>
+                    <div id="spw" class="container-fluid text-white mt-5">
+                        <h1 class="hc-heading" id="cart-toppings">Choose Pizza Toppings</h1>
+                        <form action="">
+                            <div id="spw-input">
+                                <p id="choosen-toppings"></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="spw" class="container-fluid text-white">
+                        <h1 class="hc-heading">Number of orders</h1>
+                            <div id="spw-input">
+                                <p id="orders-choosen"></p>
+                            </div>
+                            <div id="spw-input">
+                                <h1 class="hc-heading">Total Amount</h1>
+                                <p id="total-amount"></p>
+                            </div>
+                            <div id="spw-input">
+                                <button class="place-order" onclick="finishOrder()">CHECKOUT</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="finish-order">
+                <div id="spw-input">
+                    <p id="finish-order"></p>
+                </div>
+            </div>
         </section>
     </div>
 </body>
