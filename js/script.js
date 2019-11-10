@@ -4,6 +4,7 @@ function Pizza(size,crust,toppings){
 	this.crust = crust;
 	this.toppings = toppings;
 };
+
 // Variables for storing HTML DOM elements
 let sizeSelector = document.getElementById("size-selector");
 let sizePrice = 0;
@@ -16,6 +17,7 @@ let cartContainer = document.getElementById("cart");
 let sizeName = "";
 let crustName = "";
 let toppingsName = [];
+
 
 // Prototype
 Pizza.prototype = {
@@ -61,3 +63,37 @@ Pizza.prototype = {
 	}
 }
 
+// Setting up the delivery function
+
+
+// Place an order
+const placeOrder = () => {
+	const order = new Pizza(sizeSelector,crustSelector,allToppings);
+	order.pricesForSizes();
+	order.pricesForCrust();
+	order.pricesForToppings();
+	// Calculating the total for one order
+	let oneOrderTotal = crustPrice + sizePrice + toppingsTotal;
+	// Multiplying that with the number of orders choosen by user
+	let numberOfOrders = document.getElementById("number-of-orders").value;
+	let n = parseInt(numberOfOrders);
+	if(numberOfOrders < 1){n = 1};
+	let totalOfAllOrders = n * oneOrderTotal;
+	orderContainer.style.display = "none";
+	cartContainer.style.display = "block";
+	// Cart outputs
+	document.getElementById("choosen-size").innerHTML = sizeName;
+	document.getElementById("choosen-crust").innerHTML = crustName;
+	document.getElementById("choosen-toppings").innerHTML = toppingsName;
+	document.getElementById("orders-choosen").innerHTML = n;
+	document.getElementById("total-amount").innerHTML = totalOfAllOrders;
+};
+
+function finishOrder(){
+	let deliveryOption = document.getElementById("delivery-option");
+	if (deliveryOption.checked){
+		
+		let location = prompt("Enter your location");
+		alert("Your Pizza will be delivered to " + location + " in a few minutes. Thank you");
+	}
+}
