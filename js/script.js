@@ -30,7 +30,7 @@ Pizza.prototype = {
 
 		this.size.selectedIndex == "0" ? sizeName = "Large Pizza":
 		this.size.selectedIndex == "1" ? sizeName = "Medium Pizza":
-		this.size.selectedIndex == "1" ? sizeName = "Small Pizza":
+		this.size.selectedIndex == "2" ? sizeName = "Small Pizza":
 		alert("Select a size please");
 
 	},
