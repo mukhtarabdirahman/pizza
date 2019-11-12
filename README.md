@@ -14,7 +14,7 @@ Displays Form For Entering pizza  Size, Crust and Toppings
 - INPUT: "Pizza size"
 - INPUT: "crust"
 - INPUT: "Toppings"
-- UTPUT: "Displays total"
+- OUTPUT: "Displays total"
 - INPUT: "location"
 - OUTPUT: "Display your location"
 
