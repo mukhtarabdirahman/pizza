@@ -1,3 +1,10 @@
+# Pizza Ninja
+
+### It is a website application where users can select pizza based on the sizes crust and toppings and have pizza delivered to there location
+
+## Description
+This website has been structured using html,css,bootstrap and js 
+
 ## Technologies Used
 - HTML & CSS (Bootstrap)
 - JavaScript (jQuery 3.4.1)
